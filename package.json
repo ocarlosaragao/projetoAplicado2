@@ -2,10 +2,11 @@
   "name": "meu-projeto",
   "version": "1.0.0",
   "description": "Simple Meeting Scheduler",
-  "main": "app.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "clean": "parcel clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,10 +15,12 @@
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^16.4.5",
+    "gh-pages": "^6.1.1",
     "parcel": "^2.12.0",
     "process": "^0.11.10"
   },
   "dependencies": {
-    "firebase": "^9.6.1"
+    "firebase": "^9.6.1",
+    "meu-projeto": "file:"
   }
 }
