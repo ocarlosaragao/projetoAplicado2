@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 15px;
+  }
+  
+  #meetings-list li {
+    margin-bottom: 10px;
+  }
+  

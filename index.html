@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Reuniões</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Agende uma Reunião com um Coordenador</h1>
+
+  <!-- Meeting Form -->
+  <form id="meeting-form">
+    <label for="teacher-name">Segmento Escolar:</label>
+    <select id="teacher-name" required>
+      <option value="">Selecione o Segmento Escolar</option>
+      <!-- Add teacher options here -->
+    </select>
+
+    <label for="meeting-date">Data:</label>
+    <input type="date" id="meeting-date" required>
+
+    
+
+    <label for="meeting-time">Hora:</label>
+    <input type="time" id="meeting-time" step="900" required>
+
+
+    <button type="submit">Agendar Reunião</button>
+  </form>
+
+  <!-- Scheduled Meetings -->
+  <h2>Minhas Reuniões Agendadas</h2>
+  <ul id="meetings-list">
+    <!-- Scheduled meetings will appear here -->
+  </ul>
+
+  
+
+  
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+</script>
+  
+
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+<script src="app.js" type="module"></script>
+
+
+  </script>
+</body>
+</html>
